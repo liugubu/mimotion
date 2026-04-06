@@ -1,6 +1,8 @@
 name: 刷步数
 
 on:
+  schedule:
+    - cron: '25 {{ CRON_HOURS }} * * *'
   workflow_dispatch:
 jobs:
   build:
